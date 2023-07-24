@@ -1,0 +1,30 @@
+---
+import 'styles/openuk.css';
+import Footer from "components/Footer.astro";
+
+const { title } = Astro.props;
+
+const pageTitle = title
+  ? "OpenUK Blueprints - " + title
+  : "OpenUK Blueprints";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="favicon.png" type="image/png" sizes="30x30" />
+		<link href="https://fonts.googleapis.com/css?family=Hind&amp;display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageTitle}</title>
+	</head>
+    <body class="bg-openuk-grey font-sans">
+        <div class="container mx-auto mt-12 px-4 md:px-0 pb-12">  <!-- added padding-bottom (pb-12) -->
+            <h1 class="text-openuk-blue text-4xl font-bold mb-8">{pageTitle}</h1>
+            <div class="card p-6 shadow-lg bg-white rounded-lg">
+                <slot/>
+            </div>
+        </div>
+        <Footer />
+    </body>
+</html>

@@ -1,0 +1,100 @@
+---
+import Layout from "layouts/Layout.astro";
+import BlueprintCard from "components/BlueprintCard.astro";
+import { getBlueprintDataFromFolder } from "utils/blueprints.ts";
+---
+
+<Layout>
+  <h1>Explore the blueprints</h1>
+  <p>
+    Here, we are committed to sharing detailed technical guides designed to pave
+    the way for a sustainable and standardized technology future.
+  </p>
+
+  <h2>What is a Blueprint?</h2>
+  <p>
+    In traditional terms, a blueprint refers to a detailed technical drawing.
+    It's often a foundational plan or a map for architects and engineers to
+    craft structures and systems that stand the test of time.
+  </p>
+
+  <p>
+    For OpenUK, a Blueprint is so much more. It's a comprehensive guide or
+    roadmap for creating sustainable and standardised technology infrastructure.
+    This encompasses:
+  </p>
+
+  <ul class="list-disc pl-5 mt-4 mb-4">
+    <li class="mb-2">A detailed plan of the required components.</li>
+    <li class="mb-2">Insight into the impacts these components create.</li>
+    <li>
+      Formulation based on the principles of open source software, open
+      hardware, and open data.
+    </li>
+  </ul>
+
+  At the core, each Blueprint is the product of collaborative minds. It's
+  developed by a diverse group of volunteers and experts from both the public
+  and private sectors, ensuring that every perspective is considered and the
+  best solutions are put forth.
+
+  <h2>Why the Emphasis on Blueprints?</h2>
+
+  As our world becomes increasingly digital and connected, the ICT industry
+  faces a pressing challenge. The global demand for data and digital services is
+  exponentially growing. But with this growth comes an undeniable environmental
+  cost. We recognize that the ICT industry is on track to significantly increase
+  its carbon footprint, and the data centers — the backbone of the industry —
+  play a pivotal role in this. We also recognize the challenge and opportunity
+  in addressing waste, inefficiency, and the lack of standardized solutions.
+  Blueprints serve as a beacon in this vast landscape, providing:
+
+  <ul class="list-disc pl-5 mt-4 mb-4">
+    <li class="mb-2">
+      Sustainable Solutions: Each blueprint is rooted in sustainability. Whether
+      it's about maximizing energy efficiency or advocating for a circular
+      economy, blueprints are designed with the future of our planet in mind.
+    </li>
+    <li class="mb-2">
+      Open Collaboration: By embracing the principles of open source software,
+      open hardware, and open data, we ensure that the blueprints can be easily
+      accessed, modified, and improved upon. This open approach encourages
+      collaboration and innovation.
+    </li>
+    <li>
+      Standardization: As the industry grows, standardization becomes crucial.
+      Our blueprints offer a consistent roadmap for creating technology
+      infrastructure that meets set standards and is universally adaptable.
+    </li>
+  </ul>
+
+  <h2>Dive into Our Featured Blueprints</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    {
+      getBlueprintDataFromFolder().map((blueprint) => (
+        <BlueprintCard
+          title={blueprint.title}
+          description={blueprint.description}
+          link={"blueprints/" + blueprint.path}
+          lastUpdated={blueprint.lastUpdated}
+        />
+      ))
+    }
+  </div>
+
+  <h2>How is the content licensed?</h2>
+  <p>
+    Data is licensed under the <a href='https://cdla.dev/permissive-2-0/' target='_new'>CDLA permissive 2.0</a>. Code is released under <a href='https://www.apache.org/licenses/LICENSE-2.0.html' target='_blank'>Apache 2.0</a> license.
+    All text content is <a href='https://creativecommons.org/licenses/by-sa/2.0/'>Creative Commons Attribution-ShareAlike 2.0 Generic (CC BY-SA 2.0)</a>.
+  </p>
+
+  <p>
+    OpenUK is passionate about leading the charge towards a more sustainable and
+    open technology future. We invite you to explore, collaborate, and build
+    upon our blueprints. Together, we can drive change, innovation, and a
+    brighter future for all.
+  </p>
+
+  <p>Thank you for being a part of this journey.</p>
+</Layout>
