@@ -1,0 +1,57 @@
+body {
+    background-color: #f4f4f4;
+    font-family: 'Hind', sans-serif;
+    line-height: 1.7;
+}
+
+h1 {
+    font-size: 2.5em;   /* Main header size retained */
+    margin-bottom: 0.75em; /* Reduce whitespace below */
+    color: #004973;  /* OpenUK blue */
+}
+
+h2 {
+    font-size: 2em;  /* Adjusted to be smaller than h1 */
+    margin-bottom: 0.65em; /* Reduce whitespace below */
+    color: #004973;
+}
+
+h3 {
+    font-size: 1.75em; 
+    margin-bottom: 0.6em; /* Reduce whitespace below */
+    color: #004973;
+}
+
+
+h4 {
+    font-size: 1.5em;
+    margin-bottom: 0.75em;
+}
+
+h5 {
+    font-size: 1.3em;
+    margin-bottom: 0.7em;
+}
+
+h6 {
+    font-size: 1.1em;
+    margin-bottom: 0.65em;
+}
+
+/* Enhancing Text Readability and Appearance */
+p {
+    font-family: 'Hind', sans-serif;  
+    color: #333;  
+    line-height: 1.6;
+    margin-bottom: 1em;  /* Additional space between paragraphs for better reading */
+}
+
+a {
+    color: #0077cc;
+    text-decoration: underline;   /* Makes links stand out more, especially within text */
+    transition: color 0.2s ease;
+}
+
+.container {
+    max-width: 900px;  /* Restricting max width for better reading on larger screens */
+}
