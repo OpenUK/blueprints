@@ -1,7 +1,7 @@
 blueprintSchemaVersion: "1.0.0"
 title: "Patchwork Kilt Data Centre"
 version: "1.0.0"
-lastUpdated: "2021-09-01"
+lastUpdated: "2021-03-21"
 description: "Discover our innovative solution for creating a sustainable datacentre that prioritises energy efficiency, waste reduction, and open collaboration."
 urlToNarrative: "https://openuk.uk/openuk-consortium-developing-open-technology-blueprint-for-the-carbon-negative-data-centre-for-cop26/"
 componentsHeader: "Open Technology Circularity"
@@ -224,4 +224,7 @@ components:
           url: https://www.scaleway.com/en/transparency/
 acknowledgements:
   - "Cristian Parrino for leading the first version of this blueprint"
+  - Ali Fenn and Fahmida Bangert at ITRenew
+  - John Laban at the Open Compute Project
+  - Michael Oghia at SDI Alliance
   - Chris Lloyd-Jones for additional contributions and maintenance to the resources and approach
