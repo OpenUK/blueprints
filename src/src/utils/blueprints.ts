@@ -16,8 +16,8 @@ interface ComponentDetails {
     name: string;
     approach?: (string | { text: string, url: string })[];
     impacts?: (string | { text: string, url: string })[];
-    resources?: { url: string, title: string }[];
-    case_studies?: { url: string, title: string }[];
+    resources?: { url: string, text: string }[];
+    case_studies?: { url: string, text: string }[];
 }
 
 interface BlueprintData extends BlueprintSummaryData {

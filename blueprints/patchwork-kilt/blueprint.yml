@@ -16,50 +16,176 @@ components:
           - "Combining these trends presents an opportunity to reuse existing buildings, minimising reliance on new construction materials, and eliminating most of the embodied carbon associated with new buildings. "
           - "Refurbishing to high environmental standards will also improve site energy efficiency, waste management and heat reuse."
         impacts:
-          - "Example impact"
           - text: "Embodied carbon savings of up to 88%"
             url: "https://www.thefastmode.com/expert-opinion/20575-the-greenest-data-center-is-the-one-thats-never-built"
         resources:
           - url: "https://www.thefastmode.com/expert-opinion/20575-the-greenest-data-center-is-the-one-thats-never-built"
-            title: "The greenest data centre is the one that’s never built"
+            text: "The greenest data centre is the one that’s never built"
           - url: "https://www.wsp.com/en-US/insights/can-we-reboot-office-buildings-as-data-centers"
-            title: "Can we reboot office buildings as data centers?"
+            text: "Can we reboot office buildings as data centers?"
           - url: "https://theconversation.com/the-factories-of-the-past-are-turning-into-the-data-centers-of-the-future-70033"
-            title: "The factories of the past are turning into the data centers of the future"
+            text: "The factories of the past are turning into the data centers of the future"
           - url: "https://www.datacenterdynamics.com/en/analysis/recycled-buildings/"
-            title: "Recycled Buildings. Abandoned properties are being turned into data centers"
+            text: "Recycled Buildings. Abandoned properties are being turned into data centers"
         case_studies:
           - url: "https://www.datacenterdynamics.com/en/analysis/holistic-cooling-at-the-worlds-most-efficient-data-center/"
-            title: "Holistic cooling at the world's most efficient data center"
+            text: "Holistic cooling at the world's most efficient data center"
           - url: "https://www.datacenterdynamics.com/en/analysis/chilled-efficiency-building-bodens-type-data-center-one/"
-            title: "Chilled efficiency building Boden's type data center one"
+            text: "Chilled efficiency building Boden's type data center one"
       - id: "C1-2"
         name: "Environmental Product Declaration (EPD)"
+        approach:
+          - "Open software and open data as the enablers to transparently communicating the environmental performance and impact of building materials."
+        impacts:
+          - "Market differentiation"
+          - Regulatory and legal compliance
+          - Shared learning / collaboration
+        resources:
+        - url: https://www.oneclicklca.com/simple-epd-guide/
+          text: A simple guide to Environmental Product Declarations (EPD)
+        - text: Open EPDs
+          url: https://www.buildingtransparency.org/openepd/
+        case_studies:
+        - text: "Microsoft: Reducing Embodied Carbon in Construction"
+          url: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWGtgl
   - id: "C2"
     name: "Energy"
     subcomponents:
       - id: "C2-1"
         name: "Purchased"
+        approach:
+          - "While the ultimate goal is to source 100%, verified renewable energy, this may prove difficult in many cases today. A transitional approach is required which includes:"
+          - "Offsetting through carbon capture programs. Purchasing Renewable Energy Certificates (RECs) for these programmes should only be treated as a transitional step."
+          - "Initially establish green supply agreements with local utilities, then transition to achieving 100% renewable energy matching through Power Purchase Agreements (PPAs)."
+          - "24x7 Renewable Energy, 100% of the time by combining PPAs with local storage capacity "
+          - "Transparent, open data reporting across energy sourced, consumed, offsetting and matching."
+        impacts:
+          - "Market differentiation"
+          - Regulatory and legal compliance
+          - Shared learning / collaboration"
+        resources:
+        - url: https://journal.uptimeinstitute.com/how-data-center-operators-can-transition-to-renewable-energy/
+          text: How data centre operators can transition to renewable energy
+        - text: Renewable energy for data centres
+          url: https://uptimeinstitute.com/resources/asset/renewable-energy-for-data-centers
+        case_studies:
+        - text: "Google’s solar deal - Nevada data center would be largest of its kind"
+          url: https://www.datacenterknowledge.com/google-alphabet/google-s-solar-deal-nevada-data-center-would-be-largest-its-kind
       - id: "C2-2"
         name: "On-Site Consumption"
+        approach:
+          - "Not listed."
       - id: "C2-3"
         name: "Carbon Capture / Offset"
+        approach:
+          - "Offsetting should be treated as a temporary and transitional solution to achieving 100% Renewable Energy in the data centre."
+          - "Offsetting through the purchase of Renewable Energy Certificates, need to exclusively be based on carbon capture programs (tree planting or technology) which respect local bio-diversity and ecosystems (including indigenous communities). "
+          - "Open Data and Open Software should be adopted to transparently report across offsetting requirements, RECs purchase, and programmes behind RECs"
+        resources:
+        - url: https://journal.uptimeinstitute.com/how-data-center-operators-can-transition-to-renewable-energy/
+          text: How data centre operators can transition to renewable energy
+        - text: Renewable energy for data centres
+          url: https://uptimeinstitute.com/resources/asset/renewable-energy-for-data-centers
       - id: "C2-4"
         name: "Heat Redirect"
+        approach:
+          - "Heat generated in data centres, which is traditionally considered as waste, should be repurposed towards applications which can benefit from it, for example sustainable agriculture, or leverage an edge-based architecture to recycle heat into the homes of marginalised communities in order to reduce costs and replace the reliance on natural gas."
+        impacts:
+          - text: "Up to 30% savings on air conditioning costs"
+            url: "https://www.itrenew.com/resources/blockheating-customer-story/"
+        resources:
+        - url: https://www.dotmagazine.online/issues/on-the-edge-building-the-foundations-for-the-future/heat-recovery-from-data-centers
+          text: "Heat recovery from data centres: A win win situation"
+        - text: Utilisation of waste heat in the data centre
+          url: https://international.eco.de/topics/datacenter/white-paper-utilization-of-waste-heat-in-the-data-center/
+        case_studiesd:
+        - text: Blockheating and ITRenew
+          url: https://www.itrenew.com/resources/blockheating-customer-story/
   - id: "C3"
     name: "Hardware & Software"
     subcomponents:
       - id: "C3-1"
         name: "Rack Scale IT"
+        approach:
+          - "Open hardware, optimised by open software, with a circular model in order to keep assets in highest utility value for as long as possible, maximising lifetime value and sustainability. This requires:"
+          - Internal repair, reuse and reclaim
+          - Rack scale recertification
+          - Remanufacturing for edge form factors
+          - Recertification and remarketing of components
+          - Responsible recycling
+          - This recertification avoids corresponding amount of emissions tied to manufacturing and enables a zero carbon IT supply chain.
+        impacts:
+          - "Combined with an open architecture approach:"
+          - Capex Reduced by up to 50%
+          - Opex Reduced by up to 30%
+          - GHG Emissions reduced by up to 25%
+          - Dematerialisation of Data Centre by up to 90%
+        resources:
+        - text: Open Compute Project (OCP) reference designs
+          url: https://www.opencompute.org/wiki/Server/SpecsAndDesigns
+        - text: How the circular data center model benefits the environment and the bottom line - ITRenew 
+          url: https://www.itrenew.com/resources/infrastructure-without-compromise/
+        - text: 3 Reasons to adopt new data center models - ITRenew
+          url: https://www.itrenew.com/3-reasons-to-adopt-new-data-center-models/
+        - text: Open Hardware and the Circular Economy
+          url: https://www.youtube.com/watch?v=4X8sY8gR6j0
+        case_studies:
+        - text: ITRenew and Atlanticis
+          url: https://www.itrenew.com/resources/atlancis-customer-story/
       - id: "C3-2"
         name: "Open Architecture"
+        approach:
+          - "An open architecture enables the circularity required to achieve carbon zero."
+          - Open hardware leverages standard components, enabling recertification, reconfiguration, testing and integration to lower capex and opex while reducing GHG emissions from extended lifetime and delayed reliance on new materials.
+          - Open systems firmware enables updates and security across multiple lifetimes, lowering opex.
+          - An open architecture is also best suited for enabling innovation through its broad support, cost accessibility and flexibility.
+        impacts:
+          - "Combined with server and racks approach:"
+          - Capex Reduced by up to 50%
+          - Opex Reduced by up to 30%
+          - GHG Emissions reduced by up to 25%
+          - Dematerialisation of Data Centre by up to 90%
+        resources:
+        - text: The future of power efficient data centers
+          url: https://www.youtube.com/watch?v=vaHvzwpoOLs&t=1388s
+        case_studies:
+        - text: Comcast Central Office showing 90% dematerialisation
+          url: https://www.youtube.com/watch?v=Iq12-LrCo_4
       - id: "C3-3"
         name: "Cooling & Heat Recapture"
+        approach:
+          - Cooling accounts for up to 40% of all energy consumed by data centres. 
+          - Closed looped water cooling systems, combined with OCP architecture to leverage full power and space efficiency, is emerging as the leading cost-effective and environmentally friendly solution to cooling. 
+          - Heat generated in data centres should be repurposed towards applications which can benefit from it, for example sustainable agriculture, or leverage an edge-based architecture to recycle heat into the homes of marginalised communities in order to reduce costs and replace the reliance on natural gas.
+        impacts:
+          - Power and cooling costs reduced by up to 30%
+          - CO2 and Pollution reduction of up to 30%
+        resources:
+        - text: Data Centres and Environment - Submer
+          url: https://submer.com/blog/datacenters-and-environment/
+        - text: Ten Considerations for Data Center Direct Liquid Cooling
+          url: https://www.datacenterknowledge.com/industry-perspectives/10-considerations-data-center-direct-liquid-cooling
+        - text: Waste Heat Utilization is the Data Center Industry’s Next Step Toward Net-Zero Energy
+          url: https://datacenterfrontier.com/waste-heat-utilization-data-center-industry/
+        - text: Utilisation of Waste Heat in the Data Centre
+          url: https://international.eco.de/topics/datacenter/white-paper-utilization-of-waste-heat-in-the-data-center/
+        case_studies:
+        - text: Nautilus and ITRenew
+          url: https://www.itrenew.com/resources/nautilus-customer-story/
+        - text: Blockheating and ITRenew
+          url: https://www.itrenew.com/resources/blockheating-customer-story/
   - id: "C4"
     name: "Network"
     subcomponents:
       - id: "C4-1"
         name: "5G / Edge"
+        approach:
+          - "Deployment of an edge-based network architecture, enabled by 5G connectivity, can:"
+        impacts:
+          - Increase speeds by up to 10 times that of 4G
+          - Reduce latency by bringing compute capabilities into the network and closer to end users
+          - Reduce commute time of employees and travel distance of transportation fleet
+          - "Enable local and district heat redirect solutions due to proximity of data centres"
   - id: "C5"
     name: "Operations"
     subcomponents:
@@ -67,13 +193,35 @@ components:
         name: "People commute"
       - id: "C5-2"
         name: "Transport Fleet"
+        approach:
+          - "Electrification of the full transportation fleet."
+        resources:
+        - text: The road to fleet electrification
+          url: https://www.ceres.org/sites/default/files/reports/2020-05/The%20Road%20to%20Fleet%20Electrification.pdf
+        - text: Data - the key to fleet electrification
+          url: https://sepapower.org/knowledge/data-the-key-to-fleet-electrification/
       - id: "C5-3"
         name: "Waste Mgmt"
+        approach:
+          - "Adoption of responsible packaging solutions, including all packaging materials from recycled content and for them to be further reusable, recyclable, or compostable - eliminate single use plastic in IT asset packaging, and dramatically reduce packaging weight."
   - id: "C6"
     name: "Regulatory"
     subcomponents:
       - id: "C6-1"
         name: "Transparency & reporting requirements"
+        approach:
+          - Reducing critical Scope 3 emissions is highly dependent on the transparency, reporting and commitment from the entire supply chain. 
+          - Voluntary reporting has demonstrated inconsistency in data and lack of transparency, so the introduction of regulations to ensure full transparency and reporting across all scopes (1,2,3) is required. 
+          - Furthermore, governments should require full transparency and disclosure from their data centre supply chain.
+          - "An open data model is essential to enable collaboration and public benefit."
+        resources:
+        - text: SDIA Open Data Hub
+          url: https://blog.sdialliance.org/announcing-the-sdia-open-data-hub
+        - text: UK Government should have a centralised register of all its data centres
+          url: https://www.datacenterdynamics.com/en/news/uk-gov-should-have-centralized-register-of-all-its-data-centers-says-gov-report/
+        case_studies:
+        - text: https://www.scaleway.com/en/transparency/
+          url: https://www.scaleway.com/en/transparency/
 acknowledgements:
-  - "John Doe for insightful feedback"
-  - "Jane Smith for peer review"
+  - "Cristian Parrino for leading the first version of this blueprint"
+  - Chris Lloyd-Jones for additional contributions and maintenance to the resources and approach

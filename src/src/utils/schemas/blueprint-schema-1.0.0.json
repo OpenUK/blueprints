@@ -103,13 +103,13 @@
                   "type": "array",
                   "items": {
                     "type": "object",
-                    "required": ["url", "title"],
+                    "required": ["url", "text"],
                     "properties": {
                       "url": {
                         "type": "string",
                         "format": "uri"
                       },
-                      "title": {
+                      "text": {
                         "type": "string"
                       }
                     }
@@ -119,13 +119,13 @@
                   "type": "array",
                   "items": {
                     "type": "object",
-                    "required": ["url", "title"],
+                    "required": ["url", "text"],
                     "properties": {
                       "url": {
                         "type": "string",
                         "format": "uri"
                       },
-                      "title": {
+                      "text": {
                         "type": "string"
                       }
                     }
