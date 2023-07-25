@@ -1,8 +1,6 @@
 ---
 import Layout from "layouts/Layout.astro";
-import { getBlueprintDataByPath,  getBlueprintDataFromFolder } from "utils/blueprints.ts";
-
-
+import { getBlueprintDataByPath, getBlueprintDataFromFolder } from "utils/blueprints.ts";
 
 export function getStaticPaths() {
     const blueprints = getBlueprintDataFromFolder();
@@ -18,13 +16,88 @@ const blueprintDetails = getBlueprintDataByPath(blueprint);
 ---
 
 <Layout>
-    <h1>{blueprintDetails.title}</h1>
-    <p>{blueprintDetails.description}</p>
-    <a href="/" 
-    class="inline-block px-6 py-2 mt-4 bg-openuk-blue text-white rounded hover:bg-opacity-80 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-offset-2 focus:ring-openuk-blue"
-    role="link"
-    aria-label="Return to Home"
->
-    &larr; Return to Home
-</a>
+    <div class="p-8">
+        <h1 class="text-4xl mb-4 font-semibold">{blueprintDetails.title}</h1>
+        <p class="text-lg mb-6">{blueprintDetails.description}</p>
+
+        <a href="../" 
+        class="inline-block px-6 py-2 mb-6 bg-openuk-blue text-white rounded hover:bg-opacity-80 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-offset-2 focus:ring-openuk-blue"
+        role="link"
+        aria-label="Return to Home"
+        >
+        &larr; Return to Home
+        </a>
+
+        <h2 class="text-3xl mb-4 font-semibold">Components</h2>
+        <ul class="pl-5">
+        {blueprintDetails.components.map((component) => (
+            <li class="mb-6">
+            <h3 class="text-2xl mb-2 font-semibold">{component.name}</h3>
+            <ul class="pl-5">
+                {component.subcomponents && component.subcomponents.map((subcomponent) => (
+                <li class="mt-4 mb-4">
+                    <h4 class="text-xl mb-2 font-medium">{subcomponent.name}</h4>
+                    <h5 class="text-lg mb-2 font-semibold">Approach</h5>
+                    <ul class="list-disc pl-5 mb-2">
+                    {subcomponent.approach && subcomponent.approach.map(item => {
+                        if (typeof item === "string") {
+                        return <li>{item}</li>;
+                        } else if (item.text && item.url) {
+                        return (
+                            <li>
+                            <a href={item.url} target="_blank" rel="noopener noreferrer" class="text-openuk-blue hover:underline">
+                                {item.text}
+                            </a>
+                            </li>
+                        );
+                        }
+                    })}
+                    {!subcomponent.approach && <li>None</li>}
+                    </ul>
+
+                    <h5 class="text-lg mb-2 font-semibold">Impacts</h5>
+                    <ul class="list-disc pl-5 mb-2">
+                    {subcomponent.impacts && subcomponent.impacts.map(item => {
+                        if (typeof item === "string") {
+                        return <li>{item}</li>;
+                        } else if (item.text && item.url) {
+                        return (
+                            <li>
+                            <a href={item.url} target="_blank" rel="noopener noreferrer" class="text-openuk-blue hover:underline">
+                                {item.text}
+                            </a>
+                            </li>
+                        );
+                        }
+                    })}
+                    {!subcomponent.impacts && <li>None</li>}
+                    </ul>
+
+                    <h5 class="text-lg mb-2 font-semibold">Resources</h5>
+                    <ul class="list-disc pl-5 mb-2">
+                    {subcomponent.resources && subcomponent.resources.map(resource => (
+                        <li>
+                        <a href={resource.url} target="_blank" rel="noopener noreferrer" class="text-openuk-blue hover:underline">
+                            {resource.title}
+                        </a>
+                        </li>
+                    ))}
+                    {!subcomponent.resources && <li>None</li>}
+                    </ul>
+                </li>
+                ))}
+            </ul>
+            </li>
+        ))}
+        </ul>
+
+        <a
+        href="../"
+        class="inline-block px-6 py-2 mt-4 bg-openuk-blue text-white rounded hover:bg-opacity-80 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-offset-2 focus:ring-openuk-blue"
+        role="link"
+        aria-label="Return to Home"
+        >
+        &larr; Return to Home
+        </a>
+    </div>
 </Layout>
